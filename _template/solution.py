@@ -1,14 +1,8 @@
-#!/usr/bin/env python3
-# https://adventofcode.com/2023/day/
+"""
+https://adventofcode.com/2023/day/2
+"""
 
-with open('e.txt', 'r') as f:
-    for line in f.readlines():
-        pass
+with open('ex.txt', 'r') as f: lines = [l.strip() for l in f.readlines()]
 
-
-##### p1 #####
-#print(f'Part1: {p1}')
-
-
-##### p2 #####
-#print(f'Part2: {p2}')
+#print(f'p1: {p1}')
+#print(f'p2: {p2}')
