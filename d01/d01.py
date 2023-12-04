@@ -26,24 +26,14 @@ def p1(code):
 ########## P2 ###########
 
 
-def get_rightmost_number(line: str, D: dict) -> int:
+def get_rightmost_number(line: str, SYMBOLS: dict) -> int:
     idx = len(line)-1
-    while idx > -1:SYMBOLS = {
-    'one': 1,
-    'two': 2,
-    'three': 3,
-    'four': 4,
-    'five': 5,
-    'six': 6,
-    'seven': 7,
-    'eight': 8,
-    'nine': 9 
-}
+    while idx > -1:
         if line[idx].isdigit():
             return int(line[idx])
-        for n in D:
+        for n in SYMBOLS:
             if line[idx:].startswith(n):
-                return D[n]
+                return SYMBOLS[n]
         idx -= 1        
 
 
