@@ -35,4 +35,3 @@ for h in H:
     p2 += x
 print('p1:', p1)
 print('p2:', p2)
-
